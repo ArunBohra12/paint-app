@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" type="module" defer></script>
+  <title>Paint</title>
+</head>
+<body>
+  <div class="paint-ribbon">
+    <label for="color-picker">
+      <input type="color" id="color-picker">
+    </label>
+
+    <select id="paint-thickness">
+      <option value="" selected disabled>Thickness</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </div>
+
+  <div class="paint-section">
+    <canvas id="paint-board" height="500" width="500"></canvas>
+  </div>
+
+  <button id="clear-board">Clear</button>
+</body>
+</html>
